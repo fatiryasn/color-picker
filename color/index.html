@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Color Picker</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <div class="navbar">
+            <div class="bars">
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+                <div class="bar1"></div>
+            </div>
+            <div class="menu">
+                <h2><i class="fas fa-book"></i>             Color History</h2>
+                <div class="outerConapp">
+                    <div class="appcon"></div>
+                    <div class="appcon2"></div>
+                    <div class="appcon3"></div>
+                </div>
+                <button class="clear">Clear History</button>
+            </div>
+            <div class="innerNavbar">
+                <a href="index.html">Color Picker</a>
+                <div class="bar"></div>
+                <a href="https://www.instagram.com/ftryas.n/" class="ig"><i class="fab fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+    <nav>
+    <main>
+        <div class="attempt">
+            <h2 class="click">Click = 0</h2>
+            <button class="reset" onclick="resetClick()">Reset</button>
+        </div>    
+        <div class="container">
+            <h2>Color : <span class="color">#FFFFFF</span></h2>
+            <div class="innerCon">
+                <button id="btn" onclick="tambahKlik()">Random Hex</button>
+                <button id="copy">Copy that hex</button>
+            </div>
+        </div>
+    </main>
+    <script src="app.js"></script>
+</body>
+</html>

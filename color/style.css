@@ -1,0 +1,210 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;
+    max-height: 95vh;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 10px 15px black;
+    background-color: #ece5e5;
+    width: 100%;
+    position: fixed;
+    top: 0;
+}
+.innerNavbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    margin-right: 20px;
+}
+a{
+    margin: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-decoration: none;
+    font-size: 20px;
+    color: black;
+}
+a:hover{
+    cursor: pointer;
+    color: red;
+}
+.ig::after{
+    content: 'ftryas.n';
+}
+a, a:hover{
+    transition: 0.5s;
+}
+.attempt{
+    margin: 0;
+    padding: 20px;
+    border-right: dashed black;
+    border-bottom: dashed black;
+    border-radius: 0 0 8px 0;
+    width: 17vh;
+    margin-top: 50px;
+
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 20px;
+    height: 40vh;
+}
+h2{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#btn, #copy, .reset{
+    margin: 5px;
+    border: solid black;
+    border-radius: 10px;
+    font-size: 20px;
+    font-family: fantasy;
+    padding: 7px;
+    user-select: none;
+}
+#btn:hover, #copy:hover, .reset:hover, .clear:hover{
+    border: solid red;
+    cursor: pointer;
+}
+#btn:hover, #copy:hover, .reset:hover,#btn, #copy, .reset{
+    transition: 0.5s;
+}
+.reset{
+    font-size: 15px;
+}
+.bar{
+    width: 3px;
+    height: 30px;
+    background-color: black;
+}
+.bar1{
+    width: 30px;
+    height: 3px;
+    background-color: black;
+    margin: 5px
+}
+.bars{
+    margin-left: 20px;
+    padding: 0;
+    background-color: none;
+}
+.bars:hover{
+    background-color: rgb(80, 78, 78);
+    cursor: pointer;
+    border-radius: 15px;
+    padding: 3px;
+}
+.bars, .bars:hover{
+    transition: 1s;
+}
+.menu{
+    bottom: 0;
+    left: -100%;
+    flex-direction: column;
+    position: absolute;
+    top: 58px;
+    background-color: #022728;
+    padding: 1px 10px 1px 10px;
+}
+.menu, .menu.active{
+    transition: 0.3s;
+}
+.clear, .clear.active{
+    transition: 0.3s ;
+}
+.menu.active{
+    left: 0;
+    height: 140vh;
+    flex-direction: column;
+    border-right: solid white 3px;
+    border-bottom: solid white 3px;
+    overflow-y: auto;
+    max-height: 100vh;
+}
+.menu h2{
+    color:white;
+    border-bottom: solid 2px white;
+    padding-bottom: 10px;
+}
+.clear{
+    padding: 7px;
+    margin: 2px 15px 20px;
+    position: fixed;
+    bottom: 0;
+    left: -100%;
+    background-color: #022728;
+    color:#ece5e5;
+    border: solid white 3px;
+    border-radius: 7px;
+    box-shadow: 5px 10px 3px black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.clear.active{
+    left: 1.5rem;
+    bottom: 0;
+    margin-left: 0;
+}
+.outerConapp{
+    display: flex;
+    flex-direction: row;
+    height:75vh;
+}
+.appcon, .appcon2{
+    display: flex;
+    flex-direction: column;
+}
+.jsButton{
+    color: white;
+    background-color: rgb(32, 29, 29);
+    border: solid rgb(67, 66, 66);
+    border-radius: 5px;
+    margin: 15px;
+}
+.jsButton:hover{
+    border: solid white;
+    cursor: pointer
+}
+.notifJs{
+    z-index: 10000;
+    position: absolute;
+    bottom: 50px;
+    left: 50%;
+    height: 5px;
+    width: 20px;
+}
+@media (max-width: 332px){
+    .menu{
+        top: 50px;
+    }
+    .menu.active{
+        height: 100vh;
+        overflow-y: auto;
+        max-height: 93vh;
+    }
+    .innerCon{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .attempt{
+        margin-top: 50px;
+    }
+    .container, .attempt{
+        font-size: 75%;
+    }
+    a{
+        font-size: 85%;
+    }
+    .bar1{
+        width: 20px;
+        height: 2.5px;
+        margin: 5px;
+    }
+}
